@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Push to Docker Hub') {
             steps {
-                bat 'docker tag registration:v1 sriludone/registration:v1'
-                bat 'docker push sriludone/registration:v1'
+                bat 'docker tag registration:v1 jasmithakonudula/registration:v1'
+                bat 'docker push jasmithakonudula/registration:v1'
             }
         }
         stage('Deploy to Kubernetes') {
